@@ -15,3 +15,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.eyecare.brightness.threshold=15 \
     ro.eyecare.brightness.level=8 \
     ro.whitepoint_calibration_enable=false
+
+# Ultrasound
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.vendor.audio.us.proximity=true
