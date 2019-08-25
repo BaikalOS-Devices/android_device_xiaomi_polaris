@@ -9,13 +9,16 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.sf.lcd_density=440
 
-# Display features
+# Fingerprint
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.displayfeature.histogram.enable=true \
-    ro.eyecare.brightness.threshold=15 \
-    ro.eyecare.brightness.level=8 \
-    ro.whitepoint_calibration_enable=false
+    ro.hardware.fp.fpc=true \
+    ro.hardware.fp.goodix=true
 
-# Ultrasound
+# GNSS
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.vendor.audio.us.proximity=true
+    persist.vendor.overlay.izat.optin=rro
+
+# NFC
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.hardware.nfc_nci=nqx.default \
+    ro.se.type=HCE,UICC
